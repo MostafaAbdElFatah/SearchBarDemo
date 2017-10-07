@@ -14,6 +14,8 @@
 		714042CA1F1CF60B00D31583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714042C81F1CF60B00D31583 /* LaunchScreen.storyboard */; };
 		714042D51F1CF60B00D31583 /* SearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714042D41F1CF60B00D31583 /* SearchBarTests.swift */; };
 		714042E01F1CF60C00D31583 /* SearchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714042DF1F1CF60C00D31583 /* SearchBarUITests.swift */; };
+		714042EE1F1D008E00D31583 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714042ED1F1D008E00D31583 /* ShowViewController.swift */; };
+		714042F01F1D01ED00D31583 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714042EF1F1D01ED00D31583 /* imageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		714042DB1F1CF60B00D31583 /* SearchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		714042DF1F1CF60C00D31583 /* SearchBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarUITests.swift; sourceTree = "<group>"; };
 		714042E11F1CF60C00D31583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714042ED1F1D008E00D31583 /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		714042EF1F1D01ED00D31583 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				714042BF1F1CF60B00D31583 /* AppDelegate.swift */,
 				714042C11F1CF60B00D31583 /* ViewController.swift */,
 				714042C31F1CF60B00D31583 /* Main.storyboard */,
+				714042ED1F1D008E00D31583 /* ShowViewController.swift */,
 				714042C61F1CF60B00D31583 /* Assets.xcassets */,
 				714042C81F1CF60B00D31583 /* LaunchScreen.storyboard */,
 				714042CB1F1CF60B00D31583 /* Info.plist */,
+				714042EF1F1D01ED00D31583 /* imageCollectionViewCell.swift */,
 			);
 			path = SearchBar;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				714042C21F1CF60B00D31583 /* ViewController.swift in Sources */,
 				714042C01F1CF60B00D31583 /* AppDelegate.swift in Sources */,
+				714042F01F1D01ED00D31583 /* imageCollectionViewCell.swift in Sources */,
+				714042EE1F1D008E00D31583 /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mostafa.SearchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mostafa.SearchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,6 +494,7 @@
 				714042E61F1CF60C00D31583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		714042E71F1CF60C00D31583 /* Build configuration list for PBXNativeTarget "SearchBarTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +503,7 @@
 				714042E91F1CF60C00D31583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		714042EA1F1CF60C00D31583 /* Build configuration list for PBXNativeTarget "SearchBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +512,7 @@
 				714042EC1F1CF60C00D31583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
