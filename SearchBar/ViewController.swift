@@ -18,36 +18,27 @@ class ViewController: UIViewController , UISearchBarDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.8, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
-                if self.step == 0 {
-                    self.imageSearch.transform = CGAffineTransformMakeScale(1.09, 1.09)
-                    self.step = 1
-                }else{
-                    self.imageSearch.transform = CGAffineTransformIdentity
-                    self.step = 0
-
-                }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.8, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
+            if self.step == 0 {
+                self.imageSearch.transform = CGAffineTransform(scaleX: 1.09, y: 1.09)
+                self.step = 1
+            }else{
+                self.imageSearch.transform = CGAffineTransform.identity
+                self.step = 0
+            }
             
-            }, completion: nil)
+        }, completion: nil)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if searchBar.text == ""{
-            
-            let useralter = UIAlertController(title: "Please Fill Searh Bar", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            let OkAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+            let useralter = UIAlertController(title: "Please Fill Searh Bar", message: nil, preferredStyle: UIAlertControllerStyle.alert)
+            let OkAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
             useralter.addAction(OkAction)
-            self.presentViewController(useralter, animated:true, completion: nil)
-          
+            self.present(useralter, animated:true)
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
